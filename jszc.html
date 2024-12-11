@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>技术支持</title>
+    <style id="theme-style" type="text/css">
+        body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,button{margin:0;padding:0;font-family:PingFang SC,"Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Microsoft Yahei","Heiti SC","WenQuanYi Micro Hei",sans-serif;font-size:14px;font-weight:normal}*,*:before,*:after{box-sizing:border-box}fieldset,img{border:0}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}a{text-decoration:none}table{table-layout:fixed;border-collapse:collapse;border-spacing:0}table tr,table td{border-collapse:collapse;border-spacing:0}table tr td,table tr th{border:1px solid #eee;line-height:24px;padding:12px;font-size:16px}table tr th{background:#fafafa;color:#333;font-weight:bold}table tr td{color:#666}::-webkit-scrollbar{width:8px;height:8px}::-webkit-scrollbar-thumb{background-color:#ccc}::selection{background:#404040;color:#fff}.fr{float:right}.fl{float:left}.ml20{margin-left:20px}.ml30{margin-left:30px}body{counter-reset:section;padding:15px}h1{padding:10px 0;text-align:center;font-size:20px}h2{counter-reset:sub;font-size:16px;line-height:24px;padding:5px 0}h2:before{content:counter(section,cjk-ideographic) "、";counter-increment:section}h3{line-height:25px;padding:5px 0;counter-reset:sub4}h3:before{content:counter(sub) "、";counter-increment:sub}h4{line-height:25px;padding:5px 0}h4:before{content:"("counter(sub4) ")";counter-increment:sub4;margin-right:5px}p{padding:5px 0;line-height:25px}html,body{color:#333;background:#FFF}
+    </style>
+    <script>
+        // 黑夜模式样式
+        const darkModeStyles = `
+            body {
+                background: #2c2c2c;
+                color: #ffffff;
+            }
+            table tr th {
+                background: #333;
+                color: #fafafa;
+            }
+            table tr td {
+                color: #ddd;
+            }
+        `;
+        // 检查 URL 参数并应用对应的主题
+        function applyThemeFromUrl() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const theme = urlParams.get('theme');
+            if (theme === 'dark') {
+                document.getElementById('theme-style').innerHTML += darkModeStyles;
+            }
+        }
+        // 初始化时应用主题
+        applyThemeFromUrl();
+    </script>
+</head>
+
+<body>
+    <h1>鑫悦赛事技术支持</h1>
+    <p>尊敬的客户,欢迎您使用鑫悦赛事服务！</p>
+    <p>如您在使用本应用过程中，遇到任何问题都可以找我们提供协助。</p>
+    <p>联系邮箱：shivanidarrigo479@gmail.com</p>
+</body></html>
